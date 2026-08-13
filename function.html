@@ -7,10 +7,22 @@
 </head>
 <body>
     <script>
-        const abes = () => "hello";
-        document.write(abes());
-        const add = (a,b) => a+b;
-        document.write(add(5, 6));
+        let veh = prompt("Enter the mode of transport");
+        if(veh == "car") {
+            let num = prompt("Enter number of seats");
+            let cost = (num) => num*500;
+            document.write(cost(num));
+        }
+        else if(veh == "chopper") {
+            let num = prompt("Enter number of seats");
+            let cost = (num) => num*5000;
+            document.write(cost(num));
+        }
+        else if(veh == "aeroplane") {
+            let num = prompt("Enter number of seats");
+            let cost = (num) => num*10000;
+            document.write(cost(num));
+        }
     </script>
 </body>
 </html>
